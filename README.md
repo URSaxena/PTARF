@@ -10,7 +10,7 @@ PTARF decides each request in a fixed order: a deterministic policy gate (role�
 | Path | Description |
 |---|---|
 | `PTARF_Executable_Code.ipynb` | Colab notebook (executed, with outputs). Contains the benchmark generator, all evaluation code, and every table and figure of the manuscript. |
-| `data/` | The five synthetic benchmark datasets (`seed0`–`seed4`), `DATA_DICTIONARY.csv`, `README_DATASET.md` and `SHA256SUMS.txt`. |
+| "PTARF_Dataset.zip/" | The five synthetic benchmark datasets (`seed0`–`seed4`), `DATA_DICTIONARY.csv`, `README_DATASET.md` and `SHA256SUMS.txt`. |
 
 ## Reproduce the results
 
@@ -23,7 +23,7 @@ Retrieval uses TF-IDF with cosine similarity. The LLM explanation stage is not p
 
 ## Benchmark
 
-Fully synthetic, no personal data. Each seed has 5,000 users, a 120-day behaviour history, 50,000 requests and one policy document per rule. Labels come from eight named scenarios, never from any model. The generator is deterministic for a given seed, so the notebook regenerates identical files; to check the released files, run `sha256sum -c SHA256SUMS.txt` inside `data/`. File descriptions: `data/README_DATASET.md`.
+Fully synthetic, no personal data. Each seed has 5,000 users, a 120-day behaviour history, 50,000 requests and one policy document per rule. Labels come from eight named scenarios, never from any model. The generator is deterministic for a given seed, so the notebook regenerates identical files; to check the released files, run `sha256sum -c SHA256SUMS.txt` inside "PTARF_Dataset.zip/". File descriptions: `data/README_DATASET.md`.
 
 Contact
 
