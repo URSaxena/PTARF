@@ -15,7 +15,7 @@ PTARF decides each request in a fixed order: a deterministic policy gate (role�
 ## Reproduce the results
 
 1. Open the notebook in Google Colab (a CPU runtime is enough):
-   `https://github.com/URSaxena/PTARF/blob/main/PTARF_Executable_Code.ipynb`
+   "https://colab.research.google.com/github/URSaxena/PTARF/blob/main/PTARF_Executable_Code.ipynb"
 2. Keep `QUICK = False` in the setup cell. This reproduces the five-seed results in the manuscript and takes about 45–90 minutes. `QUICK = True` (about 10–25 minutes) only checks that the pipeline runs; its numbers differ slightly.
 3. Choose "Runtime → Run all. The last cell compares the recomputed values with the manuscript and prints `All values within tolerance`.
 
